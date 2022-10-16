@@ -75,3 +75,13 @@ a{
 a:hover{
     color: white;
 }
+
+.error{
+
+    background-color: #ca5b5b;
+    color: #000000;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto; 
+}
