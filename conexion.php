@@ -8,7 +8,7 @@ $pass ="";
 $db ="Login";
 
 
-$conexion = mysqli_connect($host,$user,$pass,$db);
+$conexion = mysqli_connect($host,$User,$pass,$db);
 
 if(!$conexion) {
     echo "conexion fallida";
