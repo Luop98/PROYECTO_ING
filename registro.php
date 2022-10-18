@@ -1,33 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="Style.css">
+  <title>Formulario Registro</title>
+
 </head>
 <body>
-
-
-<body>
- <h2>Registro de Miembros</h2>
- <form method="POST" action="registro.php">
- Nombre de Usuario: <br />
- <input type="text" name="nombre" size="50" />
- <p>
- Contraseña: <br />
- <input type="text" name="contraseña" size="50" />
- <p>
-  Email: <br />
- <input type="text" name="email" size="50" />
- <p>
- Codigo Usuario: <br />
- <input type="text" name="codigo usuario" size="8"/>
- <p>
-
-
- <input type="submit" name="submit" value="Enviar" />
- </form>
- </body>
+  <form method="post" action="login.php">
+   
+  <section class ="form-register formulario" id="registro">
+    <h4>Formulario Registro</h4>
+    <input class="controls" type="text" name="txtnombre"  placeholder="Ingrese su Nombre">
+    <input class="controls" type="text" name="txtapellido"  placeholder="Ingrese su Apellido">
+    <input class="controls" type="email" name="txtcorreo"  placeholder="Ingrese su Correo">
+    <input class="controls" type="password" name="txtpassword"  placeholder="Ingrese su Contraseña">
+   
+    <input class="botons" type="submit" value="Ingresar">
+    <p><a href="#">Ya tienes Usuario?</a></p>
+  </section>
+ 
+</form>
 </body>
 </html>
