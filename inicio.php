@@ -9,7 +9,8 @@
     <title>Inicio</title>
 </head>
 <body>
-   <center><h1>Inicio</h1></center> 
+   <center><h1>Inicio_Tareas</h1></center> 
+
 
    <a href="CerrarSesion.php" class="btn btn-danger">Cerrar Sesion</a>
 </body>
