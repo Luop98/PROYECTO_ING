@@ -14,7 +14,7 @@
   <section class ="form-register formulario" id="registro">
     <h4>REGISTRO</h4>
     <label>Codigo Usuario</label>
-    <input class="controls" type="text" name="txtnombre"  placeholder="Ingrese Codigo Usuario">
+    <input class="controls" type="text" name="txtnombre"  placeholder="Ingrese Codigo Usuario" require>
     <label>Correo Electronico</label>
     <input class="controls" type="text" name="txtapellido"  placeholder="Ingrese su Correo Electronico">
     <label>Nombre de Usuario</label>
@@ -22,9 +22,10 @@
     <label>Contraseña</label>
     <input class="controls" type="password" name="txtpassword"  placeholder="Ingrese su Contraseña">
     <label></label>
-    <input class="botons" type="submit" value="Registrar">
-    <p><a href="index.php">Ya tienes Usuario?</a></p>
-
+    <br>
+    <button type="submit">Registrar</button>
+    <a href="index.php">Ya tienes Usuario?</a>
+    
   </section>
  
 </form>

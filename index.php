@@ -38,7 +38,7 @@
         <input type="password" name="Clave" placeholder="Clave">
         <hr>
         <button type="submit">Iniciar Sesion</button>
-        <a href="CrearCuenta.php">Crear Cuenta</a>
+        <a href="registro.php">Crear Cuenta</a>
     </form>
 </body>
 </html>
