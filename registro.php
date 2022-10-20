@@ -4,22 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="Style.css">
-  <title>Formulario Registro</title>
+  <link rel="stylesheet" href="StyleR.css">
+  <title>Registro</title>
 
 </head>
 <body>
   <form method="post" action="login.php">
    
   <section class ="form-register formulario" id="registro">
-    <h4>Formulario Registro</h4>
-    <input class="controls" type="text" name="txtnombre"  placeholder="Ingrese su Nombre">
-    <input class="controls" type="text" name="txtapellido"  placeholder="Ingrese su Apellido">
-    <input class="controls" type="email" name="txtcorreo"  placeholder="Ingrese su Correo">
+    <h4>REGISTRO</h4>
+    <label>Codigo Usuario</label>
+    <input class="controls" type="text" name="txtnombre"  placeholder="Ingrese Codigo Usuario">
+    <label>Correo Electronico</label>
+    <input class="controls" type="text" name="txtapellido"  placeholder="Ingrese su Correo Electronico">
+    <label>Nombre de Usuario</label>
+    <input class="controls" type="email" name="txtcorreo"  placeholder="Ingrese su Nombre Usuario">
+    <label>Contraseña</label>
     <input class="controls" type="password" name="txtpassword"  placeholder="Ingrese su Contraseña">
-   
-    <input class="botons" type="submit" value="Ingresar">
-    <p><a href="#">Ya tienes Usuario?</a></p>
+    <label></label>
+    <input class="botons" type="submit" value="Registrar">
+    <p><a href="index.php">Ya tienes Usuario?</a></p>
+
   </section>
  
 </form>
