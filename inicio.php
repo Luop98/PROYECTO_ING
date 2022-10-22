@@ -1,10 +1,16 @@
 <?php
 include("conexion.php");
-
-$tareas = "SELECT * FROM t_tareas";
+session_start();
+//$nombre = $_POST ['Usuario'];
+$tareas = "SELECT * FROM t_tareas where ";
 $resul = mysqli_query($conexion,$tareas);
 $row= mysqli_fetch_array($resul);
+
+//$usuario = "SELECT * FROM t_usuarios";
+//$res =  mysqli_query($conexion,$usuario);
+//$roww = mysqli_fetch_array($res);
 ?>
+
 
 
 <!DOCTYPE html>
@@ -19,7 +25,7 @@ $row= mysqli_fetch_array($resul);
     <title>Inicio</title>
 </head>
 <body>
-   <center><h1 >Bienvenido   </h1></center> 
+   <center><h1 >Bienvenido <?php $nombre=$_SESSION ['NOMBRE_U']; echo $nombre ?>   </h1></center> 
 
 
    <div class="container mt-5">
@@ -29,11 +35,11 @@ $row= mysqli_fetch_array($resul);
 
             <form action="insertarT.php" method="POST">
             <label>ID</label>
-            <input type="text" class="form-control mb-3" name="id" placeholder="id">
+            <input type="text" class="form-control mb-3" name="id" placeholder="id" required>
             <label>TAREA</label>
-            <input type="text" class="form-control mb-3 " name="tareas" placeholder="Tareas">
+            <input type="text" class="form-control mb-3 " name="tareas" placeholder="Tareas" required>
 
-            <input type="submit" class="btn btn-primary" value="ENVIAR">
+            <button name="ENVIAR" type="submit">ENVIAR</button>
          
             </form>
         </div>
@@ -45,9 +51,7 @@ $row= mysqli_fetch_array($resul);
                     
                         <th>ID</th>
                         <th>Tareas</th>
-                        <th>⠀⠀⠀⠀</th>
-                        
-                        <th>Acción</th>
+                       <th>Acción</th>
                         
                        
                     </tr>
@@ -61,7 +65,7 @@ $row= mysqli_fetch_array($resul);
                     <tr>
                         <th><?php echo $row['id'] ?>  </th>
                         <th><?php echo $row['tareas'] ?>  </th>
-                        <th>⠀⠀⠀⠀</th>
+                        
                          <th><a href="actualizar.php?id=<?php echo $row['id'] ?>" class="btn btn-info">Editar</a> <a href="delete.php?id=<?php echo $row['id'] ?>" class="btn btn-danger">Eliminar</a></th>
                         
                     </tr>
