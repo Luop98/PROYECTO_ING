@@ -36,7 +36,10 @@
 
 
         if(mysqli_num_rows($result) === 1){
-            $row = mysqli_fetch_assoc($result);
+            session_start();
+            $_SESSION['NOMBRE_U']=$nombre;
+            header("Location: Inicio.php");
+      /*   $row = mysqli_fetch_assoc($result);
             if($row['NOMBRE_U'] === $Usuario && $row['CONTRASEÑA']===$Clave){
             $_SESSION['NOMBRE_U']=$row['NOMBRE_U'];    
             $_SESSION['CORREO_ELEC']=$row['CORREO_ELEC'];
@@ -47,7 +50,7 @@
         }else {
             header("Location: Index.php?error=El usuario o la clave son incorrectas");
             exit();
-        }
+        }*/
 
     }else {
         header("Location: Index.php?error=El usuario o la clave son incorrectas");

@@ -2,7 +2,7 @@
 include("conexion.php");
 
 //CAPTURAR VARIABLES DEL FORMULARIO DE TAREAS
-//$id=$_POST['id'];
+$id=$_POST['id'];
 $tareas=$_POST['tareas'];
 
 $insert  = "inser into t_tareas(id,tareas) values('$id','$tareas')";
