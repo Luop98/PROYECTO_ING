@@ -9,21 +9,22 @@
 
 </head>
 <body>
+  <!--FORMULARIO DE REGISTRO DE USUARIO-->
   <form method="post" action="registroDatos.php">
    
   <section class ="form-register formulario" id="registro">
     <h4>REGISTRO</h4>
    
     <label>Correo Electronico</label>
-    <input class="controls" type="email" name="CORREO_ELEC"  placeholder="Ingrese su Correo Electronico">
+    <input class="controls" type="email" name="CORREO_ELEC"  placeholder="Ingrese su Correo Electronico" required>
     <label>Nombre de Usuario</label>
-    <input class="controls" type="text" name="NOMBRE_U"  placeholder="Ingrese su Nombre Usuario">
+    <input class="controls" type="text" name="NOMBRE_U"  placeholder="Ingrese su Nombre Usuario" required>
     <label>Contraseña</label>
-    <input class="controls" type="password" name="CONTRASEÑA"  placeholder="Ingrese su Contraseña">
+    <input class="controls" type="password" name="CONTRASEÑA"  placeholder="Ingrese su Contraseña" required>
     <label></label>
     <br>
-    <input class="####" type="submit" value="Registrar">
-    <a href="index.php">Ya tienes Usuario?</a>
+    <input class="boton" type="submit" value="Registrar">
+
     
   </section>
  
