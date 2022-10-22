@@ -36,7 +36,6 @@
             header("Location: Inicio.php");
             exit();
             
-
         }else {
             header("Location: Index.php?error=El usuario o la clave son incorrectas");
             exit();
