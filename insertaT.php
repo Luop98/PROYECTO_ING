@@ -5,7 +5,7 @@ include("conexion.php");
 $id=$_POST['id'];
 $tareas=$_POST['tareas'];
 
-$insert  = "inser into t_tareas(id,tareas) values('$id','$tareas')";
+$insert  = "INSERT into t_tareas(id,tareas) values('$id','$tareas')";
 $res = mysqli_query($conexion,$insert);
 
 if($res){

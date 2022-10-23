@@ -36,7 +36,7 @@
 
 
         if(mysqli_num_rows($result) === 1){
-            session_start();
+            
             $_SESSION['NOMBRE_U']=$nombre;
             header("Location: Inicio.php");
       /*   $row = mysqli_fetch_assoc($result);

@@ -2,7 +2,7 @@
 include("conexion.php");
 session_start();
 //$nombre = $_POST ['Usuario'];
-$tareas = "SELECT * FROM t_tareas where ";
+$tareas = "SELECT * FROM t_tareas ";
 $resul = mysqli_query($conexion,$tareas);
 $row= mysqli_fetch_array($resul);
 
@@ -33,7 +33,7 @@ $row= mysqli_fetch_array($resul);
         <div class="col-md-3">
             <h1>Nueva Tarea</h1>
 
-            <form action="insertarT.php" method="POST">
+            <form action="insertaT.php" method="POST">
             <label>ID</label>
             <input type="text" class="form-control mb-3" name="id" placeholder="id" required>
             <label>TAREA</label>
